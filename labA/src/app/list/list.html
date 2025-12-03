@@ -1,0 +1,9 @@
+<input [(ngModel)]="text" placeholder="Wpisz tekst">
+<button (click)="add()">Dodaj</button>
+
+<ul>
+  <li *ngFor="let item of array; let i = index">
+    {{ item }}
+    <a href="#" (click)="remove(i)">usuń</a>
+  </li>
+</ul>
