@@ -1,0 +1,15 @@
+<button routerLink="/add">Add</button>
+
+<ul>
+  <li *ngFor="let p of persons; index as i">
+    <strong>{{ p.firstName }} {{ p.familyName }}</strong> ({{ p.age }} years)
+    <div>
+      {{ p.address.city }}, {{ p.address.street }}, {{ p.address.postCode }}
+    </div>
+
+    <a [routerLink]="['/details', i]">Details</a>
+    <button (click)="delete(i)">Delete</button>
+  </li>
+</ul>
+
+<p *ngIf="persons.length === 0">List empty</p>
