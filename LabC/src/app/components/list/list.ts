@@ -22,7 +22,7 @@ export class ListComponent implements OnInit {
   }
 
   delete(index: number) {
-    if (!confirm('Видалити запис?')) return;
+    if (!confirm('Really delete?')) return;
     this.personService.delete(index);
     this.persons = this.personService.getAll();
   }

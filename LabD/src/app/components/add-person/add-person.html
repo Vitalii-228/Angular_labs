@@ -1,0 +1,38 @@
+<form (ngSubmit)="save()">
+
+  <label>
+    Name:
+    <input [(ngModel)]="person.firstName" name="firstName">
+  </label><br>
+
+  <label>
+    Prename:
+    <input [(ngModel)]="person.familyName" name="familyName">
+  </label><br>
+
+  <label>
+    Age:
+    <input type="number" [(ngModel)]="person.age" name="age">
+  </label><br>
+
+  <fieldset>
+    <legend>Address</legend>
+
+    <label>
+      City:
+      <input [(ngModel)]="person.city" name="city">
+    </label><br>
+
+    <label>
+      Street:
+      <input [(ngModel)]="person.street" name="street">
+    </label><br>
+
+    <label>
+      Mail code:
+      <input [(ngModel)]="person.postCode" name="postCode">
+    </label><br>
+  </fieldset>
+
+  <button type="submit">Save</button>
+</form>

@@ -1,0 +1,10 @@
+<a routerLink="/add">Dodaj</a>
+
+<ul>
+  <li *ngFor="let p of persons">
+    <strong>Name:</strong>{{ p.firstName }}  <strong>Prename:</strong> {{ p.familyName }} <strong>Age:</strong> {{ p.age }}
+    <a [routerLink]="['/details', p.id]">Szczegóły</a>
+    <button (click)="delete(p.id!)">Usuń</button>
+  </li>
+</ul>
+<p *ngIf="persons.length === 0">List empty</p>
