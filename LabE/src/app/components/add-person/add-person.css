@@ -1,0 +1,8 @@
+.personal-info {
+  display: flex;
+  gap: 16px;
+}
+
+.personal-info mat-form-field {
+  flex: 1;
+}

@@ -1,0 +1,23 @@
+.list-header {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.person-card {
+  margin-bottom: 12px;
+  max-width: 600px;
+}
+
+.person-card mat-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.empty-card {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fff3e0;
+  color: #e65100;
+  padding: 16px;
+}

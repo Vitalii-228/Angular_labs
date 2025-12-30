@@ -1,0 +1,9 @@
+.not-found-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ffebee;
+  color: #b71c1c;
+}
